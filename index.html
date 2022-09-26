@@ -1,7 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>James's Website | Home</title>
+
+    <link rel="stylesheet" href="./root/css/style.css">
+
+    <link rel="shortcut icon" href="g1007.ico">
+
+</head>
+
 <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+
+    <nav>
+
+        <div class="band">
+            <div class="logo"></div>
+        </div>
+
+        <div class="dropdown">
+            <div class="square">
+                <div class="hamburger">
+                    <div class="square-background"></div>
+                    <div onclick="dropboxToggle()" class="bars">
+                        <div class="bar bar1" id="bar1"></div>
+                        <div class="bar bar2" id="bar2"></div>
+                        <div class="bar bar3" id="bar3"></div>
+                    </div>
+                    <div class="dropbox" id="dropbox">
+                        <a href="index.html">Home</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="#">About</a>
+                        <a href="login.html">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="welcome">
+        <div class="canvas" id="canvas"></div>
+        <div class="shadow"></div>
+    </section>
+
+    <section class="container">
+    </section>
+
+    <div class="footer">
+        <p>Copyright &#169 2021 James Cameron</p>
+    </div>
+
+    <script src="./js/p5.min.js"></script>
+    <script src="./js/webmap-welcome-section.js"></script>
+    <script src="./js/dropbox.js"></script>
+
 </body>
+
 </html>
